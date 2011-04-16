@@ -1,0 +1,12 @@
+---
+name: "wsgi"
+runtimes:
+  - wsgi:
+      version: '1.0'
+      description: 'WSGI server for python awesomness'
+      executable: python
+      default: true
+app_servers:
+detection:
+  - "*.py": '.'
+staged_services:
